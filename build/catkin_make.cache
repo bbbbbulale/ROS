@@ -1,0 +1,2 @@
+mypkg:param_server:plumbing_pub_sub:plumbing_server_client:turtle_topic
+-DCATKIN_DEVEL_PREFIX=/home/bbbbbulale/Desktop/myWorkspace/devel -DCMAKE_INSTALL_PREFIX=/home/bbbbbulale/Desktop/myWorkspace/install -G Unix Makefiles

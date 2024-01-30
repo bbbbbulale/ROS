@@ -1,0 +1,21 @@
+#! /usr/bin/env python
+import rospy
+from plumbing_server_client.srv import AddInts,AddIntsRequest,AddIntsResponse
+
+def AddAck(req):
+    # 两个参数必须都大于0，-1作为error code
+    if req.num1<0 or req.num2<0:
+        rospy.loginfo("request: %d, %d ---有参数小于0，ack: error_-1 ", req.num1, req.num2)
+        return  AddIntsResponse(-1)
+    ack = AddIntsResponse(req.num1 + req.num2)
+    rospy.loginfo("request: %d, %d; ack: %d", req.num1, req.num2, ack.sum)
+    return ack
+
+def server_addTwoInts():
+    rospy.init_node("myServer_py")
+    sever = rospy.Service("add_two_ints", AddInts, AddAck)
+    rospy.loginfo("Ready to add two ints.")
+    rospy.spin()
+
+if __name__ == "__main__":
+    server_addTwoInts()

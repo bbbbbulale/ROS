@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+
+import rospy
+from turtlesim.msg import Pose
+
+def ShowMsgPose(msg):
+    rospy.loginfo("x=%.2f, y=%.2f, theta=%.2f, linear_velocity=%.2f, angular_velocity=%.2f",
+                  msg.x, msg.y, msg.theta, msg.linear_velocity, msg.angular_velocity)
+    
+if __name__ == "__main__":
+    rospy.init_node("turtle_get_pose_node_p")
+    sub = rospy.Subscriber("/turtle1/pose", Pose, ShowMsgPose, queue_size=100)
+    rospy.spin()
+        
+        

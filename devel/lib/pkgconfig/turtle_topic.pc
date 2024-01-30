@@ -1,0 +1,8 @@
+prefix=/home/bbbbbulale/Desktop/myWorkspace/devel
+
+Name: turtle_topic
+Description: Description of turtle_topic
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
