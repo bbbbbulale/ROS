@@ -135,6 +135,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/bbbbbulale/Desktop/myWorkspace/build/param_server/cmake_install.cmake")
   include("/home/bbbbbulale/Desktop/myWorkspace/build/plumbing_pub_sub/cmake_install.cmake")
   include("/home/bbbbbulale/Desktop/myWorkspace/build/plumbing_server_client/cmake_install.cmake")
+  include("/home/bbbbbulale/Desktop/myWorkspace/build/turtle_param/cmake_install.cmake")
+  include("/home/bbbbbulale/Desktop/myWorkspace/build/turtle_service/cmake_install.cmake")
   include("/home/bbbbbulale/Desktop/myWorkspace/build/turtle_topic/cmake_install.cmake")
 
 endif()

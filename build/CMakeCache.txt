@@ -531,6 +531,18 @@ std_msgs_DIR:PATH=/opt/ros/noetic/share/std_msgs/cmake
 std_srvs_DIR:PATH=/opt/ros/noetic/share/std_srvs/cmake
 
 //Value Computed by CMake
+turtle_param_BINARY_DIR:STATIC=/home/bbbbbulale/Desktop/myWorkspace/build/turtle_param
+
+//Value Computed by CMake
+turtle_param_SOURCE_DIR:STATIC=/home/bbbbbulale/Desktop/myWorkspace/src/turtle_param
+
+//Value Computed by CMake
+turtle_service_BINARY_DIR:STATIC=/home/bbbbbulale/Desktop/myWorkspace/build/turtle_service
+
+//Value Computed by CMake
+turtle_service_SOURCE_DIR:STATIC=/home/bbbbbulale/Desktop/myWorkspace/src/turtle_service
+
+//Value Computed by CMake
 turtle_topic_BINARY_DIR:STATIC=/home/bbbbbulale/Desktop/myWorkspace/build/turtle_topic
 
 //Value Computed by CMake
@@ -690,7 +702,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
